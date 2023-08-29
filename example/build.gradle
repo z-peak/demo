@@ -23,7 +23,7 @@ android {
 
     buildTypes {
         maybeCreate("release")
-        release {
+        getByName("release") {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
